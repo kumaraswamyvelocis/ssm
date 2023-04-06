@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Edge"  >
+		<parameter name="browser" value="chrome"/>
+					<classes>
+			<class name="test.Execution.POC" >
+				<methods>
+					<include name = "TravelPageObjects"/>
+					<include name = "apsrtcSelection"/>
+					<include name = "manage_booking"/>
+					<include name = "ryde_bus_operations"/>
+					<include name = "create_fb"/>
+					<include name = "signup_createAcct"/>				
+					</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="chrome"  >
+		<parameter name="browser" value="Edge"/>
+		<classes>
+			<class name="test.Execution.POC" >
+				<methods>
+					<include name = "TravelPageObjects"/>
+					<include name = "apsrtcSelection"/>
+					<include name = "manage_booking"/>
+					<include name = "ryde_bus_operations"/>
+					<include name = "create_fb"/>
+					<include name = "signup_createAcct"/>				
+					</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test name="firefox"  >
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="test.Execution.POC" >
+				<methods>
+					<include name = "TravelPageObjects"/>
+					<include name = "apsrtcSelection"/>
+					<include name = "manage_booking"/>
+					<include name = "ryde_bus_operations"/>
+					<include name = "create_fb"/>
+					<include name = "signup_createAcct"/>				
+					</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
